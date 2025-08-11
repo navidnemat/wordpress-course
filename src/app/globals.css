@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+a, button {
+  cursor: pointer;
+}
+
 @font-face {
   font-family: vazir;
   src: url('../font/vazir-font-v18.0.0/Farsi-Digits/Vazir-Medium-FD.eot');
