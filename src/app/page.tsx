@@ -3,9 +3,8 @@ import { FaArrowLeft } from "react-icons/fa6";
 export default function Home() {
   return (
     <div>
-
       <section className="relative bg-gradient-to-r from-indigo-500 to-purple-500 text-white overflow-hidden">
-        <div className="max-w-[1440px] mx-auto px-6 py-40">
+        <div className="max-w-[1440px] mx-auto px-12 py-40">
           <div className="flex items-center justify-between">
             <div className="w-1/2 flex flex-col gap-11">
               <h2 className="lg:text-[45px] text-shadow-sm leading-13">بیاموزید که چگونه حرفه ای و پیشرفته طراحی سایت کنید</h2>
