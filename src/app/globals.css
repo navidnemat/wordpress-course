@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
-body {
+@font-face {
+  font-family: vazir;
+  src: url('../font/vazir-font-v18.0.0/Farsi-Digits/Vazir-Medium-FD.eot');
+  src: url('../font/vazir-font-v18.0.0/Farsi-Digits/Vazir-Medium-FD.eot?#iefix') format('FontName-opentype'),
+    url('../font/vazir-font-v18.0.0/Farsi-Digits/Vazir-Medium-FD.woff') format('woff'),
+    url('../font/vazir-font-v18.0.0/Farsi-Digits/Vazir-Medium-FD.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: vazirBold;
+  src: url('../font/vazir-font-v18.0.0/Farsi-Digits/Vazir-Bold-FD.eot');
+  src: url('../font/vazir-font-v18.0.0/Farsi-Digits/Vazir-Bold-FD.eot?#iefix') format('FontName-opentype'),
+    url('../font/vazir-font-v18.0.0/Farsi-Digits/Vazir-Bold-FD.woff') format('woff'),
+    url('../font/vazir-font-v18.0.0/Farsi-Digits/Vazir-Bold-FD.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: vazir;
 }
