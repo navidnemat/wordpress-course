@@ -24,7 +24,7 @@ export default function Navbar() {
     }, [])
 
     return (
-        <div className={`fixed w-full top-0 left-0 z-[9999] transition-all duration-300 ${scrolled ? 'bg-white/80 shadow-sm backdrop-blur-xl' : 'bg-transparent text-white'}`}>
+        <div className={`fixed w-full top-0 left-0 z-[9999] transition-all duration-300 ${scrolled ? 'bg-white shadow-sm' : 'bg-transparent text-white'}`}>
             <div className={`max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-300 ${scrolled ? 'py-1.5' : 'py-5'}  flex flex-col items-center justify-between relative`}>
                 <div className="flex items-center justify-between w-full">
                     {/* Logo */}
