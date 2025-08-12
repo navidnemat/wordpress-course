@@ -10,6 +10,7 @@ import { FaInstagram } from "react-icons/fa6";
 import Link from "next/link";
 import Accordion from "@/components/accordion";
 import FeedbackSlider from "@/components/feedBackSlider";
+import AnimatedSection from "@/components/animatedSection";
 
 export default function Home() {
   return (
@@ -19,21 +20,33 @@ export default function Home() {
         <div className="max-w-[1440px] mx-auto px-12 py-40">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="w-full lg:w-1/2 flex flex-col gap-11">
-            
-              <h2 className="text-[24px] lg:text-[40px] font-extrabold leading-tight text-white drop-shadow-md">بیاموزید که چگونه حرفه ای و پیشرفته طراحی سایت کنید</h2>
-              <p className="text-white/85 leading-relaxed max-w-[500px]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
-              <div>
-                <button className="bg-teal-400 px-4 py-2.5 rounded-full ease-in transition-all duration-200  hover:shadow-[0_0_10px_#00D5BE] flex items-center gap-2.5 hover:[&_svg]:-translate-x-1">مشاهده دوره ها
-                  <FaArrowLeft className="transition-all duration-200" />
-                </button>
-              </div>
+              <AnimatedSection delay={1.1}>
+                <h2 className="text-[24px] lg:text-[40px] font-extrabold leading-tight text-white drop-shadow-md">بیاموزید که چگونه حرفه ای و پیشرفته طراحی سایت کنید</h2>
+              </AnimatedSection>
+
+              <AnimatedSection delay={1.3}>
+                <p className="text-white/85 leading-relaxed max-w-[500px]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+              </AnimatedSection>
+
+              <AnimatedSection delay={1.5}>
+                <div>
+                  <button className="bg-teal-400 px-4 py-2.5 rounded-full ease-in transition-all duration-200  hover:shadow-[0_0_10px_#00D5BE] flex items-center gap-2.5 hover:[&_svg]:-translate-x-1">مشاهده دوره ها
+                    <FaArrowLeft className="transition-all duration-200" />
+                  </button>
+                </div>
+              </AnimatedSection>
+
 
             </div>
-            <div className="hidden lg:flex w-full lg:w-1/2 items-center justify-center">
-              <div className="overflow-hidden">
-                {/* <img src="/images/sample.png" alt="آموزش وردپرس" className="object-cover w-full h-full" /> */}
+
+            <AnimatedSection delay={1.7}>
+              <div className="hidden lg:flex w-full lg:w-1/2 items-center justify-center">
+                <div className="overflow-hidden">
+                  {/* <img src="/images/sample.png" alt="آموزش وردپرس" className="object-cover w-full h-full" /> */}
+                </div>
               </div>
-            </div>
+            </AnimatedSection>
+
           </div>
         </div>
 
@@ -55,58 +68,77 @@ export default function Home() {
         <div className="max-w-[1440px] mx-auto px-12">
           <div className="flex flex-col lg:flex-row items-center justify-between w-full">
             <div className="flex flex-col items-center mb-8 lg:mb-0">
-              <span className="vazirBold text-2xl">دوره آموزشی وردپرس</span>
-              <div className="rounded-full w-60 h-1.5 bg-gradient-to-r from-teal-400 to-purple-500 mt-2.5"></div>
-              <p className="text-slate-700 mt-2.5">لورم ایپسوم متن ساختگی</p>
+              <AnimatedSection>
+                <span className="vazirBold text-2xl">دوره آموزشی وردپرس</span>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.2}>
+                <div className="rounded-full w-60 h-1.5 bg-gradient-to-r from-teal-400 to-purple-500 mt-2.5"></div>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.4}>
+                <p className="text-slate-700 mt-2.5">لورم ایپسوم متن ساختگی</p>
+              </AnimatedSection>
+
             </div>
             <div className="flex flex-wrap gap-4 lg:justify-end justify-center">
-              <div className="flex gap-5 p-8 rounded-xl bg-white/90 shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 backdrop-blur-sm border border-slate-200">
-                <div className="w-12 h-12 min-w-12 p-2 lg:w-16 lg:h-16 flex items-center justify-center rounded-full bg-purple-500 text-white shadow-lg">
-                  <AiOutlineGlobal className="text-3xl lg:text-4xl" />
-                </div>
-                <div className="flex flex-col items-center">
-                  <span className="vazirBold text-xl lg:text-2xl text-gray-800">توسعه وب</span>
-                  <p className="text-gray-600 max-w-[280px] text-center mt-2 leading-relaxed">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم...
-                  </p>
-                </div>
-              </div>
 
-              <div className="flex gap-5 p-8 rounded-xl bg-white/90 shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 backdrop-blur-sm border border-slate-200">
-                <div className="w-12 h-12 min-w-12 p-2 lg:w-16 lg:h-16 flex items-center justify-center rounded-full bg-purple-500 text-white shadow-lg">
-                  <BsDatabase className="text-3xl lg:text-4xl" />
+              <AnimatedSection delay={0.6}>
+                <div className="flex gap-5 p-8 rounded-xl bg-white/90 shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 backdrop-blur-sm border border-slate-200">
+                  <div className="w-12 h-12 min-w-12 p-2 lg:w-16 lg:h-16 flex items-center justify-center rounded-full bg-purple-500 text-white shadow-lg">
+                    <AiOutlineGlobal className="text-3xl lg:text-4xl" />
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <span className="vazirBold text-xl lg:text-2xl text-gray-800">توسعه وب</span>
+                    <p className="text-gray-600 max-w-[280px] text-center mt-2 leading-relaxed">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم...
+                    </p>
+                  </div>
                 </div>
-                <div className="flex flex-col items-center">
-                  <span className="vazirBold text-xl lg:text-2xl text-gray-800">طراحی دیتابیس</span>
-                  <p className="text-gray-600 max-w-[280px] text-center mt-2 leading-relaxed">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم...
-                  </p>
-                </div>
-              </div>
+              </AnimatedSection>
 
-              <div className="flex gap-5 p-8 rounded-xl bg-white/90 shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 backdrop-blur-sm border border-slate-200">
-                <div className="w-12 h-12 min-w-12 p-2 lg:w-16 lg:h-16 flex items-center justify-center rounded-full bg-purple-500 text-white shadow-lg">
-                  <FaWordpressSimple className="text-3xl lg:text-4xl" />
+              <AnimatedSection delay={0.7}>
+                <div className="flex gap-5 p-8 rounded-xl bg-white/90 shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 backdrop-blur-sm border border-slate-200">
+                  <div className="w-12 h-12 min-w-12 p-2 lg:w-16 lg:h-16 flex items-center justify-center rounded-full bg-purple-500 text-white shadow-lg">
+                    <BsDatabase className="text-3xl lg:text-4xl" />
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <span className="vazirBold text-xl lg:text-2xl text-gray-800">طراحی دیتابیس</span>
+                    <p className="text-gray-600 max-w-[280px] text-center mt-2 leading-relaxed">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم...
+                    </p>
+                  </div>
                 </div>
-                <div className="flex flex-col items-center">
-                  <span className="vazirBold text-xl lg:text-2xl text-gray-800">وردپرس</span>
-                  <p className="text-gray-600 max-w-[280px] text-center mt-2 leading-relaxed">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم...
-                  </p>
-                </div>
-              </div>
+              </AnimatedSection>
 
-              <div className="flex gap-5 p-8 rounded-xl bg-white/90 shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 backdrop-blur-sm border border-slate-200">
-                <div className="w-12 h-12 min-w-12 p-2 lg:w-16 lg:h-16 flex items-center justify-center rounded-full bg-purple-500 text-white shadow-lg">
-                  <TbSeo className="text-3xl lg:text-4xl" />
+              <AnimatedSection delay={0.8}>
+                <div className="flex gap-5 p-8 rounded-xl bg-white/90 shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 backdrop-blur-sm border border-slate-200">
+                  <div className="w-12 h-12 min-w-12 p-2 lg:w-16 lg:h-16 flex items-center justify-center rounded-full bg-purple-500 text-white shadow-lg">
+                    <FaWordpressSimple className="text-3xl lg:text-4xl" />
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <span className="vazirBold text-xl lg:text-2xl text-gray-800">وردپرس</span>
+                    <p className="text-gray-600 max-w-[280px] text-center mt-2 leading-relaxed">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم...
+                    </p>
+                  </div>
                 </div>
-                <div className="flex flex-col items-center">
-                  <span className="vazirBold text-xl lg:text-2xl text-gray-800">سئو</span>
-                  <p className="text-gray-600 max-w-[280px] text-center mt-2 leading-relaxed">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم...
-                  </p>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.9}>
+                <div className="flex gap-5 p-8 rounded-xl bg-white/90 shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 backdrop-blur-sm border border-slate-200">
+                  <div className="w-12 h-12 min-w-12 p-2 lg:w-16 lg:h-16 flex items-center justify-center rounded-full bg-purple-500 text-white shadow-lg">
+                    <TbSeo className="text-3xl lg:text-4xl" />
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <span className="vazirBold text-xl lg:text-2xl text-gray-800">سئو</span>
+                    <p className="text-gray-600 max-w-[280px] text-center mt-2 leading-relaxed">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم...
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </AnimatedSection>
+
 
             </div>
           </div>
@@ -119,18 +151,35 @@ export default function Home() {
             <div className="w-full flex flex-col lg:flex-row items-center justify-between">
               <div className="w-full lg:w-1/2 flex items-center justify-center">
                 <div className="overflow-hidden">
-                  {/* <img src="/images/sample.png" alt="آموزش وردپرس" className="object-cover w-full h-full" /> */}
+                  <AnimatedSection>
+                    <div></div>{/* <= پاک شود */}
+
+                    {/* <img src="/images/sample.png" alt="آموزش وردپرس" className="object-cover w-full h-full" /> */}
+                  </AnimatedSection>
+
                 </div>
               </div>
               <div className="w-full lg:w-1/2 flex flex-col">
-                <span className="vazirBold text-2xl text-shadow-sm">با دوره های ما خیلی سریع متخصص شوید</span>
-                <div className="rounded-full w-60 h-1.5  bg-teal-400 mt-6"></div>
-                <p className="opacity-80 mt-7 max-w-[560px]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
-                <div>
-                  <button className="bg-teal-400 px-4 py-2.5 rounded-full mt-14 ease-in transition-all duration-200 hover:shadow-[0_0_10px_#00D5BE] flex items-center gap-2.5 hover:[&_svg]:-translate-x-1">همین حالا شروع کنید
-                    <FaArrowLeft className="transition-all duration-200" />
-                  </button>
-                </div>
+                <AnimatedSection>
+                  <span className="vazirBold text-2xl text-shadow-sm">با دوره های ما خیلی سریع متخصص شوید</span>
+                </AnimatedSection>
+
+                <AnimatedSection delay={0.2}>
+                  <div className="rounded-full w-60 h-1.5  bg-teal-400 mt-6"></div>
+                </AnimatedSection>
+
+                <AnimatedSection delay={0.6}>
+                  <p className="opacity-80 mt-7 max-w-[560px]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+                </AnimatedSection>
+
+                <AnimatedSection delay={0.8}>
+                  <div>
+                    <button className="bg-teal-400 px-4 py-2.5 rounded-full mt-14 ease-in transition-all duration-200 hover:shadow-[0_0_10px_#00D5BE] flex items-center gap-2.5 hover:[&_svg]:-translate-x-1">همین حالا شروع کنید
+                      <FaArrowLeft className="transition-all duration-200" />
+                    </button>
+                  </div>
+                </AnimatedSection>
+
               </div>
             </div>
           </div>
@@ -144,18 +193,41 @@ export default function Home() {
           <div className="max-w-[1440px] mx-auto px-12">
             <div className="flex flex-col lg:flex-row items-center">
               <div className="w-full lg:w-1/2 flex flex-col text-gray-800">
-                <div className="w-15 h-15 bg-white/60 border border-slate-200 text-gray-600 rounded-full flex items-center justify-center">
-                  <FaWordpressSimple size={30} />
-                </div>
-                <span className="vazirBold text-2xl text-shadow-sm mt-5">یادبگیرید چه کار کنید</span>
-                <div className="rounded-full w-50 h-1.5 bg-gradient-to-l from-teal-400 to-sky-500 mt-5"></div>
-                <p className=" mt-6 max-w-[560px] leading-relaxed">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزن</p>
-                <p className="mt-5 pt-5 border-t border-slate-300 opacity-80 max-w-[500px] leading-relaxed">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+
+                <AnimatedSection>
+                  <div className="w-15 h-15 bg-white/60 border border-slate-200 text-gray-600 rounded-full flex items-center justify-center mb-5">
+
+                    <FaWordpressSimple size={30} />
+
+                  </div>
+                </AnimatedSection>
+
+
+
+                <AnimatedSection delay={0.2}>
+                  <span className="vazirBold text-2xl text-shadow-sm">یادبگیرید چه کار کنید</span>
+                </AnimatedSection>
+
+                <AnimatedSection delay={0.4}>
+                  <div className="rounded-full w-50 h-1.5 bg-gradient-to-l from-teal-400 to-sky-500 mt-5"></div>
+                </AnimatedSection>
+
+                <AnimatedSection delay={0.6}>
+                  <p className=" mt-6 max-w-[560px] leading-relaxed">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزن</p>
+                </AnimatedSection>
+
+                <AnimatedSection delay={0.8}>
+                  <p className="mt-5 pt-5 border-t border-slate-300 opacity-80 max-w-[500px] leading-relaxed">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+                </AnimatedSection>
+
               </div>
               <div className="w-full lg:w-1/2 flex items-center justify-center">
-                <div className="overflow-hidden">
-                  {/* <img src="/images/sample.png" alt="آموزش وردپرس" className="object-cover w-full h-full" /> */}
-                </div>
+                <AnimatedSection delay={0.9}>
+                  <div className="overflow-hidden">
+                    {/* <img src="/images/sample.png" alt="آموزش وردپرس" className="object-cover w-full h-full" /> */}
+                  </div>
+                </AnimatedSection>
+
               </div>
             </div>
           </div>
@@ -168,18 +240,36 @@ export default function Home() {
 
 
               <div className="w-full lg:w-1/2 flex items-center justify-center">
-                <div className="overflow-hidden">
-                  {/* <img src="/images/sample.png" alt="آموزش وردپرس" className="object-cover w-full h-full" /> */}
-                </div>
+                <AnimatedSection>
+                  <div className="overflow-hidden">
+                    {/* <img src="/images/sample.png" alt="آموزش وردپرس" className="object-cover w-full h-full" /> */}
+                  </div>
+                </AnimatedSection>
+
               </div>
               <div className="w-full lg:w-1/2 flex flex-col text-gray-800">
-                <div className="w-15 h-15 bg-white/60 border border-slate-200 text-gray-600 rounded-full flex items-center justify-center">
-                  <CgWebsite size={30} />
-                </div>
-                <span className="vazirBold text-2xl text-shadow-sm mt-5">نمونه کار های خود را بسازید</span>
-                <div className="rounded-full w-66 h-1.5 bg-gradient-to-l from-teal-400 to-sky-500 mt-5"></div>
-                <p className=" mt-6 max-w-[560px] leading-relaxed">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزن</p>
-                <p className="mt-5 pt-5 border-t border-slate-300 opacity-80 max-w-[500px] leading-relaxed">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه</p>
+                <AnimatedSection>
+                  <div className="w-15 h-15 bg-white/60 border border-slate-200 text-gray-600 rounded-full flex items-center justify-center mb-5">
+                    <CgWebsite size={30} />
+                  </div>
+                </AnimatedSection>
+
+                <AnimatedSection delay={0.2}>
+                  <span className="vazirBold text-2xl text-shadow-sm ">نمونه کار های خود را بسازید</span>
+                </AnimatedSection>
+                <AnimatedSection delay={0.4}>
+                  <div className="rounded-full w-66 h-1.5 bg-gradient-to-l from-teal-400 to-sky-500 mt-5"></div>
+                </AnimatedSection>
+                <AnimatedSection delay={0.6}>
+                  <p className=" mt-6 max-w-[560px] leading-relaxed">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزن</p>
+                </AnimatedSection>
+                <AnimatedSection delay={0.8}>
+                  <p className="mt-5 pt-5 border-t border-slate-300 opacity-80 max-w-[500px] leading-relaxed">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه</p>
+                </AnimatedSection>
+
+
+
+
               </div>
             </div>
           </div>
@@ -190,19 +280,33 @@ export default function Home() {
           <div className="max-w-[1440px] mx-auto px-12">
             <div className="flex flex-col lg:flex-row items-center">
               <div className="w-full lg:w-1/2 flex flex-col text-gray-800">
-                <div className="w-15 h-15 bg-white/60 border border-slate-200 text-gray-600 rounded-full flex items-center justify-center">
-                  <TbTargetArrow size={30} />
-                </div>
-                <span className="vazirBold text-2xl text-shadow-sm mt-5">به اهداف خود برسید</span>
-                <div className="rounded-full w-48 h-1.5 bg-gradient-to-l from-teal-400 to-sky-500 mt-5"></div>
-                <p className=" mt-6 max-w-[560px] leading-relaxed">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزن</p>
-                <p className="mt-5 pt-5 border-t border-slate-300 opacity-80 max-w-[500px] leading-relaxed">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون</p>
+                <AnimatedSection>
+                  <div className="w-15 h-15 bg-white/60 border border-slate-200 text-gray-600 rounded-full flex items-center justify-center mb-5">
+                    <TbTargetArrow size={30} />
+                  </div>
+                </AnimatedSection>
+                <AnimatedSection delay={0.2}>
+                  <span className="vazirBold text-2xl text-shadow-sm mt-5">به اهداف خود برسید</span>
+                </AnimatedSection>
+                <AnimatedSection delay={0.4}>
+                  <div className="rounded-full w-48 h-1.5 bg-gradient-to-l from-teal-400 to-sky-500"></div>
+                </AnimatedSection>
+                <AnimatedSection delay={0.6}>
+                  <p className=" mt-6 max-w-[560px] leading-relaxed">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزن</p>
+                </AnimatedSection>
+                <AnimatedSection delay={0.8}>
+                  <p className="mt-5 pt-5 border-t border-slate-300 opacity-80 max-w-[500px] leading-relaxed">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون</p>
+                </AnimatedSection>
+
               </div>
 
               <div className="w-full lg:w-1/2 flex items-center justify-center">
-                <div className="overflow-hidden">
-                  {/* <img src="/images/sample.png" alt="آموزش وردپرس" className="object-cover w-full h-full" /> */}
-                </div>
+                <AnimatedSection delay={0.9}>
+                  <div className="overflow-hidden">
+                    {/* <img src="/images/sample.png" alt="آموزش وردپرس" className="object-cover w-full h-full" /> */}
+                  </div>
+                </AnimatedSection>
+
               </div>
 
             </div>
@@ -215,15 +319,23 @@ export default function Home() {
           <div className="max-w-[1440px] mx-auto px-12">
             <div className="w-full flex flex-col lg:flex-row items-center justify-between">
               <div className="w-full lg:w-1/2 flex flex-col">
-                <span className="vazirBold text-2xl text-shadow-sm">کل کارآموز ها در دوره پروژه محور شرکت می کنند!</span>
+                <AnimatedSection>
+                  <span className="vazirBold text-2xl text-shadow-sm">کل کارآموز ها در دوره پروژه محور شرکت می کنند!</span>
+                </AnimatedSection>
 
-                <p className="opacity-80 mt-7 max-w-[560px]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+                <AnimatedSection delay={0.2}>
+                  <p className="opacity-80 mt-7 max-w-[560px]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+                </AnimatedSection>
+
 
               </div>
               <div className="w-full lg:w-1/2 flex items-center justify-center">
-                <div className="overflow-hidden">
-                  {/* <img src="/images/sample.png" alt="آموزش وردپرس" className="object-cover w-full h-full" /> */}
-                </div>
+                <AnimatedSection delay={0.3}>
+                  <div className="overflow-hidden">
+                    {/* <img src="/images/sample.png" alt="آموزش وردپرس" className="object-cover w-full h-full" /> */}
+                  </div>
+                </AnimatedSection>
+
               </div>
 
             </div>
@@ -236,7 +348,9 @@ export default function Home() {
       <section className="pt-12">
         <div className="max-w-[1440px] mx-auto px-12">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-10">
+
             <Link href={''} className="w-full lg:w-1/2 flex items-center gap-4 bg-white shadow-md rounded-lg cursor-pointer overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[#1b80f3]/20">
+
               <div className="flex items-center justify-center p-6 text-white bg-[#1b80f3]">
                 <LiaTelegram size={40} />
               </div>
@@ -244,8 +358,14 @@ export default function Home() {
                 <span className="text-lg vazirBold text-[#1b80f3]">در تلگرام</span>
                 <span className="text-gray-800">ما را در تلگرام دنبال کنید</span>
               </div>
+
+
             </Link>
+
+
+
             <Link href={''} className="w-full lg:w-1/2 flex items-center gap-4 bg-white shadow-md rounded-lg cursor-pointer overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[#CC239C]/20">
+
               <div className="flex items-center justify-center p-6 text-white bg-[#CC239C]">
                 <FaInstagram size={40} />
               </div>
@@ -254,6 +374,8 @@ export default function Home() {
                 <span className="text-gray-800">ما را در اینستاگرام دنبال کنید</span>
               </div>
             </Link>
+
+
           </div>
         </div>
       </section>
@@ -262,23 +384,35 @@ export default function Home() {
         <div className="max-w-[1440px] mx-auto px-12">
           <div className="flex flex-col items-center">
             <div className="flex flex-col items-center">
+
               <span className="vazirBold text-2xl text-gray-800 text-center">سوالات متداول</span>
+
               <div className="rounded-full w-60 h-1.5 bg-gradient-to-r from-teal-400 to-purple-500 mt-4"></div>
+
             </div>
+
             <div className="flex flex-col items-center w-full max-w-[600px] mt-7 gap-4">
+
               <Accordion title="پشتیبانی دوره چقدر هست ؟">
                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
               </Accordion>
+
+
               <Accordion title="آیا می توانم فایل های دوره را دانلود کنم ؟">
                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
               </Accordion>
+
               <Accordion title="لورم ایپسوم متن ساختگی با تولید سادگی ؟">
                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
               </Accordion>
+
               <Accordion title="لورم ایپسوم متن ساختگی با تولید سادگی ؟">
                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
               </Accordion>
+
             </div>
+
+
           </div>
         </div>
       </section>
@@ -286,12 +420,12 @@ export default function Home() {
       <section className="pt-25">
         <div className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white py-18">
           <div className="max-w-[1440px] mx-auto px-12">
-              <div className="flex flex-col items-center">
-                <span className="vazirBold text-2xl text-shadow-xs">نظرات دانشجویان</span>
-                <div className="rounded-full w-50 h-1.5 bg-gradient-to-l from-teal-400 to-sky-500 mt-5"></div>
-              </div>
+            <div className="flex flex-col items-center">
+              <span className="vazirBold text-2xl text-shadow-xs">نظرات دانشجویان</span>
+              <div className="rounded-full w-50 h-1.5 bg-gradient-to-l from-teal-400 to-sky-500 mt-5"></div>
+            </div>
 
-              <FeedbackSlider />
+            <FeedbackSlider />
           </div>
         </div>
       </section>
